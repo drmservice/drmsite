@@ -9,12 +9,12 @@ function App() {
     en: {
       hero: {
         tag: "Google Business Profile Experts",
-        headingLine1: "Grow Your Business",
-        headingLine2: "on Google Maps",
-        subheading: "Google Business Profile Optimization for Local Businesses",
-        description: "Dominate local searches, improve rankings, and turn profile views into real paying customers with our premium optimization services.",
-        ctaPrim: "Get Free Consultation",
-        ctaSec: "Explore Services"
+        headingLine1: "Grow Your Business on",
+        headingLine2: "Google Search & Google Maps",
+        subheading: "Professional Google Business Profile management for local businesses.",
+        description: "Improve visibility, respond to customer reviews, and turn profile views into real customers.",
+        ctaPrim: "Get Free Profile Audit",
+        ctaSec: "Chat on WhatsApp"
       }
     },
     mr: {
@@ -150,7 +150,7 @@ function App() {
               <a href="#leadForm" className="px-8 py-4 rounded-full bg-neon-blue hover:bg-blue-600 text-white font-bold shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:shadow-[0_0_30px_rgba(59,130,246,0.8)] transition-all transform hover:scale-105">
                 {t.hero.ctaPrim}
               </a>
-              <a href="#services" className="px-8 py-4 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium backdrop-blur-sm transition-all">
+              <a href="https://wa.me/message/IICK6ZTJ5X5WH1" target="_blank" rel="noreferrer" className="px-8 py-4 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium backdrop-blur-sm transition-all">
                 {t.hero.ctaSec}
               </a>
             </div>
@@ -169,13 +169,13 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { text: "Create Google Business Profile", sub: "(if not present)", icon: "✨" },
-                { text: "Verify & Set Up Correctly", sub: "100% Optimization", icon: "✅" },
+                { text: "Verify & Optimize Profile", sub: "Setup & Verification", icon: "✅" },
                 { text: "Reply to Customer Reviews", sub: "Build Engagement", icon: "💬" },
-                { text: "Monitor Profile Regularly", sub: "Spam Protection", icon: "🛡️" },
+                { text: "Monitor Profile Regularly", sub: "Consistent Tracking", icon: "🛡️" },
                 { text: "Update Photos", sub: "(if provided)", icon: "📸" },
-                { text: "Provide QR Code", sub: "For Easy Reviews", icon: "📱" },
-                { text: "Monthly Summary Report", sub: "Track Growth", icon: "📊" },
-                { text: "Review Analysis & Strategy", sub: "Expert Reputation Fixes", icon: "💡" },
+                { text: "Provide QR Code", sub: "For Easy Customer Reviews", icon: "📱" },
+                { text: "Monthly Summary Report", sub: "Track Your Growth", icon: "📊" },
+                { text: "Review Insights", sub: "Improvement Suggestions", icon: "💡" },
               ].map((item, index) => (
                 <div key={index} className="glass p-6 rounded-2xl flex items-start gap-4 hover:bg-white/10 transition-all hover:-translate-y-1 border border-neon-blue/20 hover:border-neon-purple/50 group hover:shadow-[0_0_15px_rgba(139,92,246,0.2)]">
                   <div className="bg-neon-blue/10 p-3 rounded-lg text-2xl group-hover:scale-110 transition-transform group-hover:bg-neon-purple/20 group-hover:text-neon-purple text-neon-blue">
@@ -214,11 +214,11 @@ function App() {
 
               <div className="lg:w-1/2 space-y-6">
                 {[
-                  { title: "More Trust on Google", desc: "Customers trust verified, active profiles.", highlight: "text-neon-cyan" },
-                  { title: "Better Visibility", desc: "Rank higher than competitors in local search.", highlight: "text-neon-blue" },
-                  { title: "More Enquiries & Calls", desc: "Direct customer actions from Maps.", highlight: "text-neon-purple" },
-                  { title: "Professional Online Image", desc: "Stand out with a polished presence.", highlight: "text-white" },
-                  { title: "Saves Owner’s Time", desc: "We handle the tech updates for you.", highlight: "text-green-400" },
+                  { title: "More Trust on Google", desc: "Active profiles with owner responses build customer trust.", highlight: "text-neon-cyan" },
+                  { title: "Better Visibility", desc: "Optimized profiles appear higher in Google Search and Maps.", highlight: "text-neon-blue" },
+                  { title: "More Calls & Visits", desc: "Customers can easily call, message, or navigate to your location.", highlight: "text-neon-purple" },
+                  { title: "Professional Online Image", desc: "A well-managed profile creates a strong first impression.", highlight: "text-white" },
+                  { title: "Save Owner's Time", desc: "We manage reviews and updates so you can focus on your business.", highlight: "text-green-400" },
                 ].map((benefit, idx) => (
                   <div key={idx} className="flex items-center gap-6 p-4 rounded-xl hover:bg-white/5 transition-colors border-l-4 border-transparent hover:border-l-neon-blue">
                     <div className={`text-2xl font-bold opacity-80 ${benefit.highlight}`}>0{idx + 1}</div>
@@ -241,9 +241,11 @@ function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { title: "Top Layout Ranking", desc: "Get found first when customers search 'near me'.", icon: "📍", gradient: "from-blue-500/20 to-purple-500/20" },
-                { title: "Review Management", desc: "Build trust with authentic 5-star reviews.", icon: "⭐", gradient: "from-cyan-500/20 to-blue-500/20" },
-                { title: "Higher Visit Conversions", desc: "Turn map views into calls and visits.", icon: "📈", gradient: "from-purple-500/20 to-pink-500/20" },
+                { title: "Improved Local Visibility", desc: "Get found first when customers search for your services near them.", icon: "📍", gradient: "from-blue-500/20 to-purple-500/20" },
+                { title: "Consistent Review Management", desc: "Build trust with authentic customer engagement and replies.", icon: "⭐", gradient: "from-cyan-500/20 to-blue-500/20" },
+                { title: "Better Customer Engagement", desc: "Turn profile views into calls, messages, and visits.", icon: "📈", gradient: "from-purple-500/20 to-pink-500/20" },
+                { title: "Simple Monthly Reporting", desc: "Clear summary of your profile performance and growth.", icon: "📊", gradient: "from-green-500/20 to-teal-500/20" },
+                { title: "Clear & Transparent Pricing", desc: "Affordable monthly management without hidden charges.", icon: "💰", gradient: "from-amber-500/20 to-orange-500/20" },
               ].map((item, index) => (
                 <div key={index} className={`group relative p-8 rounded-2xl border border-white/5 bg-gradient-to-br ${item.gradient} hover:border-white/20 transition-all duration-300 hover:transform hover:-translate-y-1`}>
                   <div className="text-4xl mb-4">{item.icon}</div>
@@ -257,37 +259,111 @@ function App() {
 
         {/* PRICING SECTION */}
         <section className="py-20 px-6 relative z-10">
+          <div className="max-w-5xl mx-auto text-center">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Simple & Transparent Pricing</h3>
+            <p className="text-slate-400 mb-10">Professional management without the complexity.</p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Trial Plan */}
+              <div className="glass p-10 rounded-3xl border border-white/10 relative overflow-hidden group hover:border-white/30 transition-all duration-500">
+                {/* Glow Effect */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 shadow-[0_0_20px_#ffffff]"></div>
+                <div className="absolute -top-20 -left-20 w-60 h-60 bg-white/5 rounded-full blur-[80px] group-hover:bg-white/10 transition-all duration-700"></div>
+
+                <h4 className="text-xl md:text-2xl font-semibold text-white mb-4">First Month Trial</h4>
+                
+                <div className="mb-8">
+                  <span className="text-5xl md:text-6xl font-bold text-white tracking-tight">₹999</span>
+                </div>
+
+                <p className="text-sm text-slate-400 mb-8 max-w-sm mx-auto border-t border-white/10 pt-4 mt-6">
+                  Complete setup and initial optimization of your Google Business Profile.
+                </p>
+
+                <div className="flex flex-col gap-3 text-slate-300 text-sm font-medium items-center">
+                  <span className="flex items-center gap-2">
+                    <span className="text-neon-cyan text-lg">✓</span> Profile Audit & Optimization
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="text-neon-cyan text-lg">✓</span> Reply to Customer Reviews
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="text-neon-cyan text-lg">✓</span> Profile Monitoring
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="text-neon-cyan text-lg">✓</span> Initial Improvements
+                  </span>
+                </div>
+              </div>
+
+              {/* Regular Plan */}
+              <div className="glass p-10 rounded-3xl border border-neon-blue/30 relative overflow-hidden group hover:border-neon-blue/50 transition-all duration-500">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-neon-blue to-transparent opacity-50 shadow-[0_0_20px_#3b82f6]"></div>
+                <div className="absolute -top-20 -left-20 w-60 h-60 bg-neon-blue/10 rounded-full blur-[80px] group-hover:bg-neon-blue/20 transition-all duration-700"></div>
+
+                <h4 className="text-xl md:text-2xl font-semibold text-neon-blue mb-4">Standard Plan</h4>
+
+                <div className="mb-8">
+                  <span className="text-5xl md:text-6xl font-bold text-white tracking-tight">₹1199</span>
+                  <span className="text-xl text-slate-400 font-medium"> / month</span>
+                </div>
+
+                <p className="text-sm text-slate-400 mb-8 max-w-sm mx-auto border-t border-white/10 pt-4 mt-6">
+                  Ongoing management, monitoring, and regular updates to maintain growth.
+                </p>
+
+                <div className="flex flex-col gap-3 text-slate-300 text-sm font-medium items-center">
+                  <span className="flex items-center gap-2">
+                    <span className="text-neon-cyan text-lg">✓</span> Ongoing Review Replies
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="text-neon-cyan text-lg">✓</span> Profile Monitoring
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="text-neon-cyan text-lg">✓</span> Photo Updates (if provided)
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="text-neon-cyan text-lg">✓</span> Monthly Summary Report
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <span className="text-neon-cyan text-lg">✓</span> Cancel Anytime
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* TRUST SECTION (Example Monthly Report) */}
+        <section className="py-20 px-6 bg-slate-900/30 border-y border-white/5">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="glass p-10 md:p-14 rounded-3xl border border-white/10 relative overflow-hidden group hover:border-neon-blue/30 transition-all duration-500">
-              {/* Glow Effect */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-neon-blue to-transparent opacity-50 shadow-[0_0_20px_#3b82f6]"></div>
-              <div className="absolute -top-20 -left-20 w-60 h-60 bg-neon-blue/10 rounded-full blur-[80px] group-hover:bg-neon-blue/20 transition-all duration-700"></div>
-
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">Simple & Transparent Pricing</h3>
-              <p className="text-slate-400 mb-10">Professional management without the complexity.</p>
-
-              <div className="mb-8">
-                <span className="text-5xl md:text-7xl font-bold text-white tracking-tight">₹500</span>
-                <span className="text-xl text-slate-400 font-medium"> / month</span>
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Example Monthly Report</h3>
+            <p className="text-lg text-slate-300 mb-10 max-w-2xl mx-auto">
+              Every month we send a clear summary report showing review activity, issues identified, and improvement suggestions.
+            </p>
+            <div className="glass p-8 rounded-2xl border border-white/10 max-w-2xl mx-auto backdrop-blur-md">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                <div className="text-left">
+                  <div className="text-xs text-neon-cyan font-bold uppercase tracking-wider">Growth Report</div>
+                  <div className="text-xl font-bold text-white">February 2026</div>
+                </div>
+                <div className="px-3 py-1 rounded-full bg-neon-blue/20 text-neon-blue text-xs font-bold">DRM SERVICE</div>
               </div>
-
-              <h4 className="text-xl md:text-2xl font-semibold text-neon-blue mb-4">Google Business Profile Management</h4>
-
-              <p className="text-sm text-slate-400 mb-8 max-w-lg mx-auto border-t border-white/10 pt-4 mt-6">
-                One-time setup charge applies if monthly service is not taken.
-              </p>
-
-              <div className="flex flex-wrap justify-center gap-4 text-slate-300 text-sm font-medium">
-                <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/5">
-                  <span className="text-neon-cyan">✓</span> No long-term contracts
-                </span>
-                <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/5">
-                  <span className="text-neon-cyan">✓</span> Cancel anytime
-                </span>
-                <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/5">
-                  <span className="text-neon-cyan">✓</span> Clear scope, no surprises
-                </span>
+              <div className="grid grid-cols-3 gap-4 mb-6">
+                <div className="p-3 bg-white/5 rounded-xl border border-white/5">
+                  <div className="text-xs text-slate-400">Reviews</div>
+                  <div className="text-xl font-bold text-white">+12</div>
+                </div>
+                <div className="p-3 bg-white/5 rounded-xl border border-white/5">
+                  <div className="text-xs text-slate-400">Replies</div>
+                  <div className="text-xl font-bold text-white">Auto</div>
+                </div>
+                <div className="p-3 bg-white/5 rounded-xl border border-white/5">
+                  <div className="text-xs text-slate-400">Growth</div>
+                  <div className="text-xl font-bold text-green-400">18%</div>
+                </div>
               </div>
+              <p className="text-sm text-slate-400 text-left italic">"Consistent replies this month helped improve the profile's trustworthiness, leading to more calls from Maps."</p>
             </div>
           </div>
         </section>
@@ -307,14 +383,14 @@ function App() {
             {/* Left Side Text */}
             <div className="text-left">
               <h3 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Ready to Scale <br /> Your Business?
+                Improve Your Google <br /> Business Profile Today
               </h3>
               <p className="text-lg text-slate-400 mb-8">
-                Fill out the form to get a complete audit of your current digital reputation and a customized growth plan.
+                Get a quick audit of your Google Business Profile and discover simple improvements that can increase your visibility on Google Search and Maps.
               </p>
 
               <ul className="space-y-4 text-slate-300">
-                {['Free GMB Audit', 'Competitor Analysis', 'Actionable Growth Plan'].map((item, i) => (
+                {['Free Profile Audit', 'Competitor Overview', 'Practical Improvement Suggestions'].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <span className="flex items-center justify-center w-6 h-6 rounded-full bg-neon-blue/20 text-neon-blue text-xs">✓</span>
                     {item}
@@ -353,7 +429,7 @@ function App() {
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
                   )}
-                  {loading ? "Sending Lead..." : "Submit Request"}
+                  {loading ? "Sending..." : "Get Free Consultation"}
                 </button>
                 <p className="text-center text-xs text-slate-500 mt-3">We respect your privacy. No spam.</p>
               </form>
@@ -363,9 +439,11 @@ function App() {
 
         {/* FOOTER */}
         <footer className="border-t border-white/5 bg-black py-10 px-6 text-center">
-          <p className="text-slate-500 text-sm">
-            &copy; {new Date().getFullYear()} Digital Reputation Management. All rights reserved. <br />
-            Proudly serving local businesses.
+          <p className="text-slate-400 text-sm mb-2">
+            &copy; {new Date().getFullYear()} DRM Service – Digital Reputation Management
+          </p>
+          <p className="text-slate-500 text-xs">
+            Helping local businesses improve their Google Business Profile presence.
           </p>
         </footer>
       </div>
